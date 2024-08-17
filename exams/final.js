@@ -1,19 +1,21 @@
+console.log('Final - 1305')
+
 // Q1
 
 console.log('\nQ1:')
 
 function reverseInt(input) {
-    return parseInt((input <0 ? '-' : '') + input.toString().replace('-','').split('').reverse().join(''))
+    return parseInt((input < 0 ? '-' : '') + input.toString().replace('-','').split('').reverse().join(''))
 }
 
-console.log(reverseInt(123))
-console.log(reverseInt(-456))
+console.log(reverseInt(123))  //  321
+console.log(reverseInt(-456)) // -654
 
 // Q2
 
 console.log('\nQ2:')
 
-function findTarget(arr, target) {
+function findTarget(arr, target) { // O(n)
     if (arr.length === 0) return 0
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target)
@@ -48,7 +50,7 @@ function displayList(head) {
     console.log(outputArr.join(', '))
 }
 
-function removeNode(node) {
+function removeNode(node) { // O(n)
     while (true) {
         node.value = node.next.value
         node = node.next
@@ -80,7 +82,7 @@ displayList(head) // 5, 1, 9
 
 console.log('\nQ4:')
 
-function findDupes(arr) {
+function findDupes(arr) { // O(n)
     obj = {}
     hasNeg = false
     lowestDupe = null
