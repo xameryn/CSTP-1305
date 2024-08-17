@@ -117,7 +117,7 @@ console.log(findDupes([1,10,1,-1,10,-1]))     // -1
 // B) Binary Search
 
 // What is the time complexity of inserting a new node at the beginning of a singly linked list?
-// B) O(1)
+// A) O(1)
 
 // In a binary search tree (BST), the left child of a node is always:
 // B) Smaller than the node
